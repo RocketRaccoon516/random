@@ -31,7 +31,7 @@ Set these up with these step-by-step instructions:
   1. Create an AWS Role in IAM with access to Lambda, CloudWatch Logs and DynamoDB.
   
      ![create_role_1](https://user-images.githubusercontent.com/18518788/38746616-134d85c6-3f16-11e8-841a-a09f15b84e3e.png "AWS Create Role Screenshot 1")
-     ![create_role_2](https://user-images.githubusercontent.com/18518788/38746753-79f0dcd8-3f16-11e8-986f-ef6588ded620.png"AWS Create Role Screenshot 2")
+     ![create_role_2](https://user-images.githubusercontent.com/18518788/38746753-79f0dcd8-3f16-11e8-986f-ef6588ded620.png "AWS Create Role Screenshot 2")
      ![create_role_3](https://user-images.githubusercontent.com/18518788/38747037-86dcd612-3f17-11e8-975e-73ef8698297b.png "AWS Create Role Screenshot 3")
 
   1. Create an AWS Lambda function named MyAlexaSkillLambdaFunction being sure to select "Alexa Skills Kit" as the trigger and using the role created above.  Take note of the ARN on the upper right, which you'll configure in the Developer Console later.
