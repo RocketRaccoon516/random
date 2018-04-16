@@ -7,7 +7,7 @@ This tool provides an easy to use front-end that allows developers to instantly
  
 The tool was edited to become the Alexa Gaming Framework by a group from UCF.
 The tool was developed by David Allen, James Jeffrey, Scott Mosher, Peter Tran,
-and sponsored by Peter Smith.
+and sponsored by Peter Smith. Improved features include node return and custom audio.
 
 ![alt text](https://cloud.githubusercontent.com/assets/7671574/17309622/a574be7a-57f4-11e6-9ea8-a52f20424bc5.png "Interactive Adventure Game Tool Screenshot")
 
@@ -87,6 +87,46 @@ Next, you'll setup your local environment to run the tool.  It's run using Node
     npm start
     ```
 
+	On Microsoft Windows:
+	
+1. Configure AWS credentials the tool will use to upload code to your Skill.  You do this by creating a file under a ".aws" directory in your home directory.
+
+    ```
+    mkdir ~/.aws/
+    touch ~/.aws/credentials
+    ```
+
+2. The file should have the format, and include keys you retrieve from the AWS console:
+
+    ```
+    [default]
+    aws_access_key_id = [KEY FROM AWS]
+    aws_secret_access_key = [SECRET KEY FROM AWS]
+    ```
+
+3.	Setup NodeJS and NPM by acquiring node 6.10.0 from the website and NPM.
+
+4.	Get the code:
+
+    ```
+    git clone  https://github.com/alexa/interactive-adventure-game-tool.git
+    ```
+
+5.  Move to the file folder and install dependencies:
+
+	```
+	cd "Path of the folder"
+	npm install
+    ```
+	
+6.	Launch:
+
+    ```
+    npm start
+    ```
+	
+Also unzip the initial configuration zip.
+
 ## Using the Tool
 
 Once the tool opens in a browser window, you'll see that a sample project is pre-loaded that shows off the main features of the tool.
@@ -117,16 +157,11 @@ Lastly, the icons on the upper right allow you to:
  Upload the Skill code to the Lambda function you configured earlier.  You can configure the function name by clicking the home icon and changing the values under "AWS Settings".
 * ![alt text](https://cloud.githubusercontent.com/assets/7671574/17307932/53fc7e50-57ec-11e6-8019-00fa8054e53e.png "Help Icon") See help content for the tool.
 
-![alt text](https://cloud.githubusercontent.com/assets/7671574/17307977/8888955a-57ec-11e6-90aa-334bf4467119.png "Interactive Adventure Game Tool Main Panel Screenshot")
-
-![alt text](https://cloud.githubusercontent.com/assets/7671574/17307979/8ba30248-57ec-11e6-89ed-ae05c2a934ff.png "Interactive Adventure Game Tool Voice Panel Screenshot")
+The new features include customizable audio, node transitions, and variables that allow for sections to be inaccessible until items are acquired.
+![alt text](https://user-images.githubusercontent.com/18518788/38817497-81a4b1fa-4166-11e8-9709-e299bac5266b.png "New Tools")
 
 ## Finishing Deployment of Your Skill
 
-Click the "Save" icon (if you haven't already), and the "Upload" icon to send the Skill code up to Lambda.  When you save the Skill, the tool generates some additional configuration inside "./src/skill/models/" that you'll use to tell Alexa how users will interact with you Skill.
-
 You'll need to complete the configuration manually by logging into the [Developer Console](https://developer.amazon.com) and accessing the "My Alexa Skill" you created above.  On the "Interaction Model" tab, copy and paste the Intent Schema from "./src/skill/models/intentSchema.json" and Sample Utterances from "./src/skill/models/utterances.txt".
-
-Click save, and the Skill should now be available on your developer account.  If your Alexa device is associated with the same Amazon account as your Developer Console account, then you can start using the skill immediately.  Or you can use it on the [online simulator](https://echosim.io) by logging in using the same account.
 
 Congrats!  Enjoy and let your imagination run wild, we can't wait to see what you come up with!
