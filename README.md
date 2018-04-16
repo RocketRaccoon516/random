@@ -158,6 +158,7 @@ Lastly, the icons on the upper right allow you to:
 * ![alt text](https://cloud.githubusercontent.com/assets/7671574/17307932/53fc7e50-57ec-11e6-8019-00fa8054e53e.png "Help Icon") See help content for the tool.
 
 The new features include customizable audio, node transitions, and variables that allow for sections to be inaccessible until items are acquired.
+
 ![alt text](https://user-images.githubusercontent.com/18518788/38817497-81a4b1fa-4166-11e8-9709-e299bac5266b.png "New Tools")
 
 ## Finishing Deployment of Your Skill
