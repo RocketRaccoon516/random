@@ -159,19 +159,19 @@ Lastly, the icons on the upper right allow you to:
 
 The new features include customizable audio, node transitions, and items that allow for sections to be inaccessible until items are acquired.
 
-New Screen
+New Screen:
 
 ![alt text](https://user-images.githubusercontent.com/18518788/38969204-13a266c2-435d-11e8-8e53-3138a1bd8a3b.png "New Screen")
 
-Audio and node transitions
+Audio and node transitions:
 
 ![alt text](https://user-images.githubusercontent.com/18518788/38969300-92bd4aee-435d-11e8-8a2a-f1116ba805e8.png "New Tools")
 
-Inventory
+Inventory:
 
 ![alt text](https://user-images.githubusercontent.com/18518788/38969452-667ed49c-435e-11e8-8dd8-1cc1a3ee71c8.png "Inventory Screen")
 
-Whisper
+Whisper:
 
 ![alt text](https://user-images.githubusercontent.com/18518788/38969515-aff08882-435e-11e8-845a-14c2de72dd80.png "Whisper")
 
